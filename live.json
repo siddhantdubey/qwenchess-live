@@ -1,7 +1,7 @@
 {
  "title": "Qwen vs the computer inside its own weights",
  "status": "live",
- "updated": "2026-10-28T18:56:02Z",
+ "updated": "2026-10-28T18:56:50Z",
  "white": "Qwen3.5-4B (thinking in English)",
  "black": "mcu-max chess engine (depth 2, \u22641000 nodes) running on the RISC-V CPU compiled into Qwen's own weights",
  "gpu": "NVIDIA A40",
@@ -567,22 +567,47 @@
    "qwen_s": 8.32,
    "t_wall": 5158.02,
    "time": "2026-10-28T18:55:18Z"
+  },
+  {
+   "call": 27,
+   "qwen_text": "I cannot play Bxf3 because the bishop on c3 is not able to move to f3? Or maybe the move is not legal for some other reason. Let me look at the legal moves. I see Ba1, Ba5, Bb2, Bb4, Bd2, Bd4, etc. Maybe I should play Bd2 to develop the bishop.\n\nActually, looking at the board, I have a bishop on c3. The rook on f3 is on f3. To recapture the rook on f3, I need to move the bishop from c3 to f3. But the system says it's illegal. Maybe the bishop on c3 is pinned? Or maybe the rook on f3 is protected?\n\nLet me think about the position. Black has a rook on f3. I have a bishop on c3. The bishop on c3 can move to f3 if the path is clear. But the system says it's illegal. Maybe the bishop on c3 is pinned by something?\n\nActually, looking at the board, I have a queen on d1 (captured), a rook on h1, a king on g1, a bishop on c3, a knight on f3 (captured), a pawn on g4, a pawn on f2, a pawn on e2, a pawn on d2, a pawn on c2, a pawn on b2, a pawn on a2, a rook on a1.\n\nWait, I don't have a knight on f3 anymore because it was captured. So the bishop on c3 can move to f3. But the system says it's illegal. Maybe the bishop on c3 is pinned by something?\n\nLet me try a different move. Maybe I should play Bd2 to develop the bishop.",
+   "qwen_move": "Bd2",
+   "legal": true,
+   "you": "Bd2",
+   "engine_move": "Bd7",
+   "board": [
+    "r..qkb..",
+    "pp.bppp.",
+    "...pn...",
+    "..p.....",
+    "P.......",
+    ".....r..",
+    "R.PB.P..",
+    ".....RK."
+   ],
+   "result": null,
+   "instructions": 198939,
+   "chip_tokens": 222424,
+   "engine_s": 39.33,
+   "qwen_s": 25.84,
+   "t_wall": 5224.94,
+   "time": "2026-10-28T18:56:25Z"
   }
  ],
  "now": {
   "phase": "engine",
   "text": "",
-  "instructions_so_far": 108843,
-  "t_wall": 5198.4,
-  "time": "2026-10-28T18:55:58Z"
+  "instructions_so_far": 61794,
+  "t_wall": 5245.2,
+  "time": "2026-10-28T18:56:45Z"
  },
  "nudges": 0,
  "result": null,
  "totals": {
-  "instructions": 25868089,
-  "instructions_completed_moves": 25759246,
-  "chip_tokens": 28544381,
-  "engine_moves": 16,
-  "wall_s": 5198.4
+  "instructions": 26019979,
+  "instructions_completed_moves": 25958185,
+  "chip_tokens": 28766805,
+  "engine_moves": 17,
+  "wall_s": 5245.2
  }
 }
