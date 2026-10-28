@@ -1,7 +1,7 @@
 {
  "title": "Qwen vs the computer inside its own weights",
  "status": "live",
- "updated": "2026-10-28T18:01:53Z",
+ "updated": "2026-10-28T18:03:05Z",
  "white": "Qwen3.5-4B (thinking in English)",
  "black": "mcu-max chess engine (depth 2, \u22641000 nodes) running on the RISC-V CPU compiled into Qwen's own weights",
  "gpu": "NVIDIA A40",
@@ -274,19 +274,19 @@
   }
  ],
  "now": {
-  "phase": "qwen",
-  "text": "I cannot play fxe5 because the pawn on f2 is pinned? Or maybe the move is not legal for some other reason. Let me look at the legal moves. I see g4, h3, h4, etc. Maybe I should play g4 to challenge Black's knight on e5.\n\nActually, looking at the board, I have a pawn on g3 and a knight on f3. The knight on e5 is attacking the pawn on g3? No, the knight on e5 is on e5. The pawn on g3 is on g3. The knight on e5 is not attacking the pawn on g3.\n\nWait, maybe I should play g4 to challenge the knight on e5. Let me try",
-  "instructions_so_far": 0,
-  "t_wall": 1951.0,
-  "time": "2026-10-28T18:01:51Z"
+  "phase": "engine",
+  "text": "",
+  "instructions_so_far": 363459,
+  "t_wall": 2021.4,
+  "time": "2026-10-28T18:03:02Z"
  },
  "nudges": 0,
  "result": null,
  "totals": {
-  "instructions": 9609247,
+  "instructions": 9972706,
   "instructions_completed_moves": 9609247,
   "chip_tokens": 10672002,
   "engine_moves": 8,
-  "wall_s": 1951.0
+  "wall_s": 2021.4
  }
 }
