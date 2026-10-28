@@ -1,1 +1,12 @@
-{"status":"test","n":3}
+{
+ "title": "Qwen vs the computer inside its own weights",
+ "status": "starting",
+ "updated": "2026-10-28T17:26:01Z",
+ "plies": [],
+ "now": {},
+ "totals": {
+  "instructions": 0,
+  "engine_moves": 0
+ },
+ "result": null
+}
