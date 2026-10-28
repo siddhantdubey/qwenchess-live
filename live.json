@@ -1,27 +1,53 @@
 {
  "title": "Qwen vs the computer inside its own weights",
  "status": "live",
- "updated": "2026-10-28T17:35:26Z",
+ "updated": "2026-10-28T17:36:15Z",
  "white": "Qwen3.5-4B (thinking in English)",
  "black": "mcu-max chess engine (depth 2, \u22641000 nodes) running on the RISC-V CPU compiled into Qwen's own weights",
  "gpu": "NVIDIA A40",
  "model": "divagr1925/Qwen3.5-4B-Qwenputer",
  "about": "Every engine move is computed by the RV32IM CPU that lives in Qwenputer's extra layers (its RAM is the model's Gated DeltaNet state). Instruction counts are exact for finished moves; the in-progress count is an estimate from tokens.",
- "plies": [],
+ "plies": [
+  {
+   "call": 1,
+   "qwen_text": "The position is the standard opening setup with pawns on the second rank. I need to make a move to start developing my pieces and controlling the center. A common and solid opening move is to play e4, which claims central space and opens lines for my queen and bishop.",
+   "qwen_move": "e4",
+   "legal": true,
+   "you": "e4",
+   "engine_move": "c5",
+   "board": [
+    "rnbqkbnr",
+    "pp.ppppp",
+    "........",
+    "..p.....",
+    "....P...",
+    "........",
+    "PPPP.PPP",
+    "RNBQKBNR"
+   ],
+   "result": null,
+   "instructions": 2059698,
+   "chip_tokens": 2286137,
+   "engine_s": 377.89,
+   "qwen_s": 8.65,
+   "t_wall": 387.13,
+   "time": "2026-10-28T17:35:48Z"
+  }
+ ],
  "now": {
   "phase": "engine",
   "text": "",
-  "instructions_so_far": 1966803,
-  "t_wall": 362.1,
-  "time": "2026-10-28T17:35:22Z"
+  "instructions_so_far": 109765,
+  "t_wall": 413.3,
+  "time": "2026-10-28T17:36:13Z"
  },
  "nudges": 0,
  "result": null,
  "totals": {
-  "instructions": 1966803,
-  "instructions_completed_moves": 0,
-  "chip_tokens": 0,
-  "engine_moves": 0,
-  "wall_s": 362.1
+  "instructions": 2169463,
+  "instructions_completed_moves": 2059698,
+  "chip_tokens": 2286137,
+  "engine_moves": 1,
+  "wall_s": 413.3
  }
 }
