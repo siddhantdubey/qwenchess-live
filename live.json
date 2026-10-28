@@ -1,7 +1,7 @@
 {
  "title": "Qwen vs the computer inside its own weights",
  "status": "live",
- "updated": "2026-10-28T18:21:48Z",
+ "updated": "2026-10-28T18:22:59Z",
  "white": "Qwen3.5-4B (thinking in English)",
  "black": "mcu-max chess engine (depth 2, \u22641000 nodes) running on the RISC-V CPU compiled into Qwen's own weights",
  "gpu": "NVIDIA A40",
@@ -356,19 +356,19 @@
   }
  ],
  "now": {
-  "phase": "qwen",
-  "text": "I cannot play axb2 because the pawn on a2 is pinned? Or maybe the move is not legal for some other reason. Let me look at the legal moves. I see a3, a4, etc. Maybe I should play a3 to support the b2 pawn.\n\nActually, looking at the board, I have a pawn on a2. The knight on b2 is on b2. To recapture the knight on b2, I need to move the pawn from a2 to b2. But the system says it's illegal. Maybe the pawn on a2 is pinned?\n\nLet me think about the position. Black has a knight on b2",
-  "instructions_so_far": 0,
-  "t_wall": 3146.8,
-  "time": "2026-10-28T18:21:47Z"
+  "phase": "engine",
+  "text": "",
+  "instructions_so_far": 326558,
+  "t_wall": 3217.5,
+  "time": "2026-10-28T18:22:58Z"
  },
  "nudges": 0,
  "result": null,
  "totals": {
-  "instructions": 15779527,
+  "instructions": 16106085,
   "instructions_completed_moves": 15779527,
   "chip_tokens": 17509541,
   "engine_moves": 10,
-  "wall_s": 3146.8
+  "wall_s": 3217.5
  }
 }
