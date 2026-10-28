@@ -1,7 +1,7 @@
 {
  "title": "Qwen vs the computer inside its own weights",
  "status": "live",
- "updated": "2026-10-28T18:31:17Z",
+ "updated": "2026-10-28T18:32:06Z",
  "white": "Qwen3.5-4B (thinking in English)",
  "black": "mcu-max chess engine (depth 2, \u22641000 nodes) running on the RISC-V CPU compiled into Qwen's own weights",
  "gpu": "NVIDIA A40",
@@ -353,22 +353,63 @@
    "qwen_s": 7.37,
    "t_wall": 3141.83,
    "time": "2026-10-28T18:21:42Z"
+  },
+  {
+   "call": 17,
+   "qwen_text": "I cannot play axb2 because the pawn on a2 is pinned? Or maybe the move is not legal for some other reason. Let me look at the legal moves. I see a3, a4, etc. Maybe I should play a3 to support the b2 pawn.\n\nActually, looking at the board, I have a pawn on a2. The knight on b2 is on b2. To recapture the knight on b2, I need to move the pawn from a2 to b2. But the system says it's illegal. Maybe the pawn on a2 is pinned?\n\nLet me think about the position. Black has a knight on b2. I have a pawn on a2. The pawn on a2 can move to b2 if the path is clear. But the system says it's illegal. Maybe the pawn on a2 is pinned by something?\n\nActually, looking at the board, I have a queen on d1, a rook on h1, a king on g1, a bishop on d2, a knight on f3, a pawn on g4, a pawn on f2, a pawn on e2, a pawn on d2, a pawn on c2, a pawn on b2 (captured), a pawn on a2, a rook on a1.\n\nWait, I don't have a pawn on b2 anymore because it was captured. So the pawn on a2 can move to b2. But the system says it's illegal. Maybe the pawn on a2 is pinned by something?\n\nLet me try a different move. Maybe I should play a3 to support the b2 pawn.",
+   "qwen_move": "a3",
+   "legal": true,
+   "you": "a3",
+   "engine_move": "Nxd1",
+   "board": [
+    "r.bqkb.r",
+    "pp..pppp",
+    "...pn...",
+    "..p.....",
+    "......P.",
+    "P.N..N..",
+    "..PB.P.P",
+    "R..n.RK."
+   ],
+   "result": null,
+   "instructions": 3168716,
+   "chip_tokens": 3507828,
+   "engine_s": 577.52,
+   "qwen_s": 23.82,
+   "t_wall": 3744.92,
+   "time": "2026-10-28T18:31:46Z"
+  },
+  {
+   "call": 18,
+   "qwen_text": "Black has captured my queen on d1 with their knight (Nxd1). This is a significant loss of material. I have a rook on a1 and a knight on f3. I need to recapture the knight to regain material. A common move is to play Rxd1, recapturing with the rook.",
+   "qwen_move": "Rxd1",
+   "legal": false,
+   "you": null,
+   "engine_move": null,
+   "board": null,
+   "result": null,
+   "instructions": 19710,
+   "chip_tokens": 22904,
+   "engine_s": 6.36,
+   "qwen_s": 9.57,
+   "t_wall": 3763.65,
+   "time": "2026-10-28T18:32:04Z"
   }
  ],
  "now": {
-  "phase": "engine",
+  "phase": "qwen",
   "text": "",
-  "instructions_so_far": 3066450,
-  "t_wall": 3715.1,
-  "time": "2026-10-28T18:31:15Z"
+  "instructions_so_far": 0,
+  "t_wall": 3763.7,
+  "time": "2026-10-28T18:32:04Z"
  },
  "nudges": 0,
  "result": null,
  "totals": {
-  "instructions": 18845977,
-  "instructions_completed_moves": 15779527,
-  "chip_tokens": 17509541,
-  "engine_moves": 10,
-  "wall_s": 3715.1
+  "instructions": 18967953,
+  "instructions_completed_moves": 18967953,
+  "chip_tokens": 21040273,
+  "engine_moves": 11,
+  "wall_s": 3763.7
  }
 }
