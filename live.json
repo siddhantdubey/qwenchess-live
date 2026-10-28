@@ -1,21 +1,27 @@
 {
  "title": "Qwen vs the computer inside its own weights",
- "status": "starting",
- "updated": "2026-10-28T17:28:15Z",
+ "status": "live",
+ "updated": "2026-10-28T17:29:26Z",
  "white": "Qwen3.5-4B (thinking in English)",
  "black": "mcu-max chess engine (depth 2, \u22641000 nodes) running on the RISC-V CPU compiled into Qwen's own weights",
  "gpu": "NVIDIA A40",
  "model": "divagr1925/Qwen3.5-4B-Qwenputer",
  "about": "Every engine move is computed by the RV32IM CPU that lives in Qwenputer's extra layers (its RAM is the model's Gated DeltaNet state). Instruction counts are exact for finished moves; the in-progress count is an estimate from tokens.",
  "plies": [],
- "now": {},
+ "now": {
+  "phase": "engine",
+  "text": "",
+  "instructions_so_far": 1830,
+  "t_wall": 5.1,
+  "time": "2026-10-28T17:29:25Z"
+ },
  "nudges": 0,
  "result": null,
  "totals": {
-  "instructions": 0,
+  "instructions": 1830,
   "instructions_completed_moves": 0,
   "chip_tokens": 0,
   "engine_moves": 0,
-  "wall_s": null
+  "wall_s": 5.1
  }
 }
