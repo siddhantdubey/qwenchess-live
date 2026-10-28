@@ -1,7 +1,7 @@
 {
  "title": "Qwen vs the computer inside its own weights",
  "status": "live",
- "updated": "2026-10-28T17:55:27Z",
+ "updated": "2026-10-28T17:56:16Z",
  "white": "Qwen3.5-4B (thinking in English)",
  "black": "mcu-max chess engine (depth 2, \u22641000 nodes) running on the RISC-V CPU compiled into Qwen's own weights",
  "gpu": "NVIDIA A40",
@@ -189,22 +189,63 @@
    "qwen_s": 12.88,
    "t_wall": 1178.89,
    "time": "2026-10-28T17:49:00Z"
+  },
+  {
+   "call": 9,
+   "qwen_text": "Black has developed their knight to f6, a common move in the Sicilian Defense. I have a bishop on c4 and a pawn on e4. I need to continue developing my pieces. A common move is to play e5, challenging Black's center and gaining space.",
+   "qwen_move": "e5",
+   "legal": true,
+   "you": "e5",
+   "engine_move": "Ng4",
+   "board": [
+    "r.bqkb.r",
+    "pp..pppp",
+    "...pn...",
+    "..p.P...",
+    "..B...n.",
+    "..N..N..",
+    "PPP..PPP",
+    "R.BQ.RK."
+   ],
+   "result": null,
+   "instructions": 2067141,
+   "chip_tokens": 2290680,
+   "engine_s": 379.69,
+   "qwen_s": 12.79,
+   "t_wall": 1572.71,
+   "time": "2026-10-28T17:55:34Z"
+  },
+  {
+   "call": 10,
+   "qwen_text": "Black has developed their knight to g4, attacking my pawn on e5. I have a pawn on e5 and a bishop on c4. I need to defend the pawn on e5. A common move is to play f3, supporting the e4 pawn and preparing to develop the knight to e2 or f3.",
+   "qwen_move": "f3",
+   "legal": false,
+   "you": null,
+   "engine_move": null,
+   "board": null,
+   "result": null,
+   "instructions": 27950,
+   "chip_tokens": 32227,
+   "engine_s": 9.36,
+   "qwen_s": 8.35,
+   "t_wall": 1591.87,
+   "time": "2026-10-28T17:55:52Z"
   }
  ],
  "now": {
   "phase": "engine",
   "text": "",
-  "instructions_so_far": 100,
-  "t_wall": 1566.7,
-  "time": "2026-10-28T17:55:27Z"
+  "instructions_so_far": 62717,
+  "t_wall": 1612.1,
+  "time": "2026-10-28T17:56:12Z"
  },
  "nudges": 0,
  "result": null,
  "totals": {
-  "instructions": 5757380,
-  "instructions_completed_moves": 5757280,
-  "chip_tokens": 6400633,
-  "engine_moves": 6,
-  "wall_s": 1566.7
+  "instructions": 7915088,
+  "instructions_completed_moves": 7852371,
+  "chip_tokens": 8723540,
+  "engine_moves": 7,
+  "wall_s": 1612.1
  }
 }
