@@ -1,7 +1,7 @@
 {
  "title": "Qwen vs the computer inside its own weights",
  "status": "live",
- "updated": "2026-10-28T17:41:05Z",
+ "updated": "2026-10-28T17:41:53Z",
  "white": "Qwen3.5-4B (thinking in English)",
  "black": "mcu-max chess engine (depth 2, \u22641000 nodes) running on the RISC-V CPU compiled into Qwen's own weights",
  "gpu": "NVIDIA A40",
@@ -114,22 +114,47 @@
    "qwen_s": 10.62,
    "t_wall": 533.57,
    "time": "2026-10-28T17:38:14Z"
+  },
+  {
+   "call": 6,
+   "qwen_text": "I cannot play exd4 either. Let me think again. The pawn is on e4. The knight is on d4. To capture the knight on d4 with the e-pawn, I need to move the pawn from e4 to d4. That is exd4. But the system says it's illegal.\n\nWait, maybe the pawn on e4 is pinned? Or maybe I misread the board. Let me look at the board again.\n\nAfter my move d4, the board was:\n8 r . b q k b n r\n7 p p . p p p p p\n6 . . . . . . . .\n5 . . p . . . . .\n4 . . . n P . . .\n3 . . N . . . . .\n2 P P P . . P P P\n1 R . B Q K B N R\n\nMy pawn is on e4. Black's knight is on d4. To capture the knight on d4, I need to play exd4. But the system says it's illegal.\n\nMaybe the pawn on e4 is pinned by something? Or maybe the knight on d4 is protected? Let me think about the position.\n\nActually, looking at the legal moves, I see Qxd4 is a legal move. That means the queen can capture the knight on d4. But I want to use the pawn.\n\nWait, maybe the pawn on e4 is not able to move to d4 because of some reason? Or maybe I need to check the board again.\n\nLet me re-read the board after Black's move:\n8 r . b q k b n r\n7 p p . p p p p p\n6 . . . . . . . .\n5 . . p . . . . .\n4 . . . n P . . .\n3 . . N . . . . .\n2 P P P . . P P P\n1 R . B Q K B N R\n\nMy pawn is on e4. Black's knight is on d4. The move exd4 should be legal. But the system says it's illegal.\n\nMaybe I need to check if the pawn on e4 is pinned. Is there a black piece attacking the e4 pawn? The black queen is on d8, the black bishop is on f8, the black knight is on c6, the black knight is on d4. None of these seem to pin the e4 pawn.\n\nWait, maybe the issue is that the pawn on e4 is not able to move to d4 because of the knight on d4? No, that doesn't make sense.\n\nLet me try a different move. Maybe I should develop the knight to f3 or e2.\n\nActually, looking at the legal moves, I see Nf3 is a legal move. Let me play Nf3 to develop the knight.",
+   "qwen_move": "Nf3",
+   "legal": true,
+   "you": "Nf3",
+   "engine_move": "Ne6",
+   "board": [
+    "r.bqkbnr",
+    "pp.ppppp",
+    "....n...",
+    "..p.....",
+    "....P...",
+    "..N..N..",
+    "PPP..PPP",
+    "R.BQKB.R"
+   ],
+   "result": null,
+   "instructions": 935922,
+   "chip_tokens": 1040313,
+   "engine_s": 175.17,
+   "qwen_s": 23.93,
+   "t_wall": 733.05,
+   "time": "2026-10-28T17:41:34Z"
   }
  ],
  "now": {
   "phase": "engine",
   "text": "",
-  "instructions_so_far": 836713,
-  "t_wall": 704.5,
-  "time": "2026-10-28T17:41:05Z"
+  "instructions_so_far": 54414,
+  "t_wall": 748.5,
+  "time": "2026-10-28T17:41:49Z"
  },
  "nudges": 0,
  "result": null,
  "totals": {
-  "instructions": 3403484,
-  "instructions_completed_moves": 2566771,
-  "chip_tokens": 2858454,
-  "engine_moves": 3,
-  "wall_s": 704.5
+  "instructions": 3557107,
+  "instructions_completed_moves": 3502693,
+  "chip_tokens": 3898767,
+  "engine_moves": 4,
+  "wall_s": 748.5
  }
 }
