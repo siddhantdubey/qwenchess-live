@@ -1,7 +1,7 @@
 {
  "title": "Qwen vs the computer inside its own weights",
  "status": "live",
- "updated": "2026-10-28T18:34:53Z",
+ "updated": "2026-10-28T18:35:41Z",
  "white": "Qwen3.5-4B (thinking in English)",
  "black": "mcu-max chess engine (depth 2, \u22641000 nodes) running on the RISC-V CPU compiled into Qwen's own weights",
  "gpu": "NVIDIA A40",
@@ -444,22 +444,38 @@
    "qwen_s": 15.15,
    "t_wall": 3924.82,
    "time": "2026-10-28T18:34:45Z"
+  },
+  {
+   "call": 21,
+   "qwen_text": "Black has played h5, a common move in the Sicilian Defense to challenge my kingside. I have a bishop on c3 and a rook on a2. I need to continue developing my pieces. A common move is to play g4, challenging Black's kingside and preparing to launch an attack.",
+   "qwen_move": "g4",
+   "legal": false,
+   "you": null,
+   "engine_move": null,
+   "board": null,
+   "result": null,
+   "instructions": 19064,
+   "chip_tokens": 22120,
+   "engine_s": 6.12,
+   "qwen_s": 9.13,
+   "t_wall": 3941.69,
+   "time": "2026-10-28T18:35:02Z"
   }
  ],
  "now": {
   "phase": "engine",
   "text": "",
-  "instructions_so_far": 0,
-  "t_wall": 3930.0,
-  "time": "2026-10-28T18:34:50Z"
+  "instructions_so_far": 74709,
+  "t_wall": 3976.9,
+  "time": "2026-10-28T18:35:37Z"
  },
  "nudges": 0,
  "result": null,
  "totals": {
-  "instructions": 19572797,
-  "instructions_completed_moves": 19572797,
-  "chip_tokens": 21714446,
+  "instructions": 19666570,
+  "instructions_completed_moves": 19591861,
+  "chip_tokens": 21736566,
   "engine_moves": 13,
-  "wall_s": 3930.0
+  "wall_s": 3976.9
  }
 }
