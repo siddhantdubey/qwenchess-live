@@ -1,7 +1,7 @@
 {
  "title": "Qwen vs the computer inside its own weights",
  "status": "live",
- "updated": "2026-10-28T18:55:13Z",
+ "updated": "2026-10-28T18:56:02Z",
  "white": "Qwen3.5-4B (thinking in English)",
  "black": "mcu-max chess engine (depth 2, \u22641000 nodes) running on the RISC-V CPU compiled into Qwen's own weights",
  "gpu": "NVIDIA A40",
@@ -551,22 +551,38 @@
    "qwen_s": 15.33,
    "t_wall": 5142.67,
    "time": "2026-10-28T18:55:03Z"
+  },
+  {
+   "call": 26,
+   "qwen_text": "Black has captured my knight on f3 with their rook (Rxf3). This is a significant loss of material. I have a bishop on c3 and a rook on a2. I need to recapture the rook to regain material. A common move is to play Bxf3, recapturing with the bishop.",
+   "qwen_move": "Bxf3",
+   "legal": false,
+   "you": null,
+   "engine_move": null,
+   "board": null,
+   "result": null,
+   "instructions": 13958,
+   "chip_tokens": 16293,
+   "engine_s": 4.59,
+   "qwen_s": 8.32,
+   "t_wall": 5158.02,
+   "time": "2026-10-28T18:55:18Z"
   }
  ],
  "now": {
   "phase": "engine",
   "text": "",
-  "instructions_so_far": 0,
-  "t_wall": 5148.2,
-  "time": "2026-10-28T18:55:08Z"
+  "instructions_so_far": 108843,
+  "t_wall": 5198.4,
+  "time": "2026-10-28T18:55:58Z"
  },
  "nudges": 0,
  "result": null,
  "totals": {
-  "instructions": 25745288,
-  "instructions_completed_moves": 25745288,
-  "chip_tokens": 28528088,
+  "instructions": 25868089,
+  "instructions_completed_moves": 25759246,
+  "chip_tokens": 28544381,
   "engine_moves": 16,
-  "wall_s": 5148.2
+  "wall_s": 5198.4
  }
 }
