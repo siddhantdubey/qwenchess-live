@@ -1,7 +1,7 @@
 {
  "title": "Qwen vs the computer inside its own weights",
  "status": "live",
- "updated": "2026-10-28T19:25:21Z",
+ "updated": "2026-10-28T19:27:42Z",
  "white": "Qwen3.5-4B (thinking in English)",
  "black": "mcu-max chess engine (depth 2, \u22641000 nodes) running on the RISC-V CPU compiled into Qwen's own weights",
  "gpu": "NVIDIA A40",
@@ -847,17 +847,17 @@
  "now": {
   "phase": "engine",
   "text": "",
-  "instructions_so_far": 508295,
-  "t_wall": 100.6,
-  "time": "2026-10-28T19:25:17Z"
+  "instructions_so_far": 286890,
+  "t_wall": 60.4,
+  "time": "2026-10-28T19:27:39Z"
  },
  "nudges": 0,
  "result": null,
  "totals": {
-  "instructions": 33492871,
+  "instructions": 33271466,
   "instructions_completed_moves": 32984576,
   "chip_tokens": 36551049,
   "engine_moves": 27,
-  "wall_s": 100.6
+  "wall_s": 60.4
  }
 }
