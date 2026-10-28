@@ -1,7 +1,7 @@
 {
  "title": "Qwen vs the computer inside its own weights",
  "status": "live",
- "updated": "2026-10-28T18:50:01Z",
+ "updated": "2026-10-28T18:51:13Z",
  "white": "Qwen3.5-4B (thinking in English)",
  "black": "mcu-max chess engine (depth 2, \u22641000 nodes) running on the RISC-V CPU compiled into Qwen's own weights",
  "gpu": "NVIDIA A40",
@@ -485,22 +485,47 @@
    "qwen_s": 28.53,
    "t_wall": 4471.92,
    "time": "2026-10-28T18:43:53Z"
+  },
+  {
+   "call": 23,
+   "qwen_text": "Black has recaptured the pawn on h5 with their rook (Rxh5). I have a bishop on c3 and a rook on a2. I need to continue developing my pieces. A common move is to play h3, challenging Black's rook on h5 and preparing to launch an attack.",
+   "qwen_move": "h3",
+   "legal": true,
+   "you": "h3",
+   "engine_move": "Rxh3",
+   "board": [
+    "r.bqkb..",
+    "pp..ppp.",
+    "...pn...",
+    "..p.....",
+    "........",
+    "P.B..N.r",
+    "R.P..P..",
+    ".....RK."
+   ],
+   "result": null,
+   "instructions": 2307207,
+   "chip_tokens": 2544171,
+   "engine_s": 419.36,
+   "qwen_s": 14.77,
+   "t_wall": 4909.93,
+   "time": "2026-10-28T18:51:11Z"
   }
  ],
  "now": {
-  "phase": "engine",
+  "phase": "qwen",
   "text": "",
-  "instructions_so_far": 1970493,
-  "t_wall": 4840.2,
-  "time": "2026-10-28T18:50:00Z"
+  "instructions_so_far": 0,
+  "t_wall": 4910.9,
+  "time": "2026-10-28T18:51:11Z"
  },
  "nudges": 0,
  "result": null,
  "totals": {
-  "instructions": 24307774,
-  "instructions_completed_moves": 22337281,
-  "chip_tokens": 24766446,
-  "engine_moves": 14,
-  "wall_s": 4840.2
+  "instructions": 24644488,
+  "instructions_completed_moves": 24644488,
+  "chip_tokens": 27310617,
+  "engine_moves": 15,
+  "wall_s": 4910.9
  }
 }
