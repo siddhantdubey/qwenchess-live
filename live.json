@@ -1,7 +1,7 @@
 {
  "title": "Qwen vs the computer inside its own weights",
  "status": "live",
- "updated": "2026-10-28T18:42:49Z",
+ "updated": "2026-10-28T18:44:03Z",
  "white": "Qwen3.5-4B (thinking in English)",
  "black": "mcu-max chess engine (depth 2, \u22641000 nodes) running on the RISC-V CPU compiled into Qwen's own weights",
  "gpu": "NVIDIA A40",
@@ -460,22 +460,47 @@
    "qwen_s": 9.13,
    "t_wall": 3941.69,
    "time": "2026-10-28T18:35:02Z"
+  },
+  {
+   "call": 22,
+   "qwen_text": "I cannot play g4 because the pawn on g3 is not able to move? Or maybe the move is not legal for some other reason. Let me look at the legal moves. I see g5, gxh5, h3, h4, etc. Maybe I should play gxh5 to capture the pawn on h5.\n\nActually, looking at the board, I have a pawn on g4? No, I don't see a pawn on g4. Let me check the board again.\n\nAfter my move Ra2, the board was:\n8 r . b q k b . r\n7 p p . . p p p .\n6 . . . p n . . .\n5 . . p . . . . p\n4 . . . . . . P .\n3 P . n . . N . .\n2 R . P B . P . P\n1 . . . . . R K .\n\nI have a pawn on g4? No, I don't see a pawn on g4. The pawn on g4 was captured? No, I didn't capture anything on g4.\n\nWait, looking at the board, I have a pawn on g4? No, the pawn on g4 is not there. Let me check the legal moves again.\n\nActually, looking at the board, I have a pawn on g4? No, I don't see a pawn on g4. The pawn on g4 was captured by Black's knight? No, I didn't capture anything on g4.\n\nLet me think about the position. Black has a pawn on h5. I have a pawn on g4? No, I don't have a pawn on g4. The pawn on g4 was captured? No, I didn't capture anything on g4.\n\nWait, maybe the pawn on g4 is not there because I moved it? No, I didn't move the pawn on g4.\n\nLet me try a different move. Maybe I should play gxh5 to capture the pawn on h5.",
+   "qwen_move": "gxh5",
+   "legal": true,
+   "you": "gxh5",
+   "engine_move": "Rxh5",
+   "board": [
+    "r.bqkb..",
+    "pp..ppp.",
+    "...pn...",
+    "..p....r",
+    "........",
+    "P.B..N..",
+    "R.P..P.P",
+    ".....RK."
+   ],
+   "result": null,
+   "instructions": 2745420,
+   "chip_tokens": 3029880,
+   "engine_s": 499.6,
+   "qwen_s": 28.53,
+   "t_wall": 4471.92,
+   "time": "2026-10-28T18:43:53Z"
   }
  ],
  "now": {
   "phase": "engine",
   "text": "",
-  "instructions_so_far": 2427142,
-  "t_wall": 4404.7,
-  "time": "2026-10-28T18:42:45Z"
+  "instructions_so_far": 0,
+  "t_wall": 4478.1,
+  "time": "2026-10-28T18:43:58Z"
  },
  "nudges": 0,
  "result": null,
  "totals": {
-  "instructions": 22019003,
-  "instructions_completed_moves": 19591861,
-  "chip_tokens": 21736566,
-  "engine_moves": 13,
-  "wall_s": 4404.7
+  "instructions": 22337281,
+  "instructions_completed_moves": 22337281,
+  "chip_tokens": 24766446,
+  "engine_moves": 14,
+  "wall_s": 4478.1
  }
 }
