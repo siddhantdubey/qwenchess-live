@@ -1,7 +1,7 @@
 {
  "title": "Qwen vs the computer inside its own weights",
- "status": "live",
- "updated": "2026-10-28T21:33:05Z",
+ "status": "finished",
+ "updated": "2026-10-28T21:34:16Z",
  "white": "Qwen3.5-4B (thinking in English)",
  "black": "mcu-max chess engine (depth 2, \u22641000 nodes) running on the RISC-V CPU compiled into Qwen's own weights",
  "gpu": "NVIDIA A40",
@@ -917,22 +917,47 @@
    "qwen_s": 15.15,
    "t_wall": 476.28,
    "time": "2026-10-28T21:31:28Z"
+  },
+  {
+   "call": 41,
+   "qwen_text": "Black has checked my king with their queen on b6 (Qb6+). I have a king on b1 and need to move the king to safety. A common move is to play Kc1, moving the king to a safer square.",
+   "qwen_move": "Kc1",
+   "legal": true,
+   "you": "Kc1",
+   "engine_move": "Bh6#",
+   "board": [
+    "r...k...",
+    "pp..pp..",
+    ".q.p...b",
+    "..p.....",
+    "b.......",
+    ".......n",
+    ".....r..",
+    "..K....."
+   ],
+   "result": "0-1 (checkmate)",
+   "instructions": 709555,
+   "chip_tokens": 783105,
+   "engine_s": 129.44,
+   "qwen_s": 15.96,
+   "t_wall": 624.75,
+   "time": "2026-10-28T21:33:57Z"
   }
  ],
  "now": {
-  "phase": "engine",
+  "phase": "done",
   "text": "",
-  "instructions_so_far": 455711,
-  "t_wall": 572.3,
-  "time": "2026-10-28T21:33:04Z"
+  "instructions_so_far": 0,
+  "t_wall": 627.7,
+  "time": "2026-10-28T21:33:59Z"
  },
  "nudges": 0,
- "result": null,
+ "result": "0-1 (checkmate)",
  "totals": {
-  "instructions": 35776680,
-  "instructions_completed_moves": 35320969,
-  "chip_tokens": 39137703,
-  "engine_moves": 30,
-  "wall_s": 572.3
+  "instructions": 36030524,
+  "instructions_completed_moves": 36030524,
+  "chip_tokens": 39920808,
+  "engine_moves": 31,
+  "wall_s": 627.7
  }
 }
