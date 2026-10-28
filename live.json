@@ -1,7 +1,7 @@
 {
  "title": "Qwen vs the computer inside its own weights",
  "status": "live",
- "updated": "2026-10-28T17:36:15Z",
+ "updated": "2026-10-28T17:37:05Z",
  "white": "Qwen3.5-4B (thinking in English)",
  "black": "mcu-max chess engine (depth 2, \u22641000 nodes) running on the RISC-V CPU compiled into Qwen's own weights",
  "gpu": "NVIDIA A40",
@@ -32,22 +32,47 @@
    "qwen_s": 8.65,
    "t_wall": 387.13,
    "time": "2026-10-28T17:35:48Z"
+  },
+  {
+   "call": 2,
+   "qwen_text": "Black has responded with the Sicilian Defense (c5), a solid and popular opening that challenges my center. I have a pawn on e4 and Black has a pawn on c5. I need to decide on my next move to continue developing my pieces and controlling the center. A common response to the Sicilian is to play Nc3, developing the knight and controlling d5.",
+   "qwen_move": "Nc3",
+   "legal": true,
+   "you": "Nc3",
+   "engine_move": "Nc6",
+   "board": [
+    "r.bqkbnr",
+    "pp.ppppp",
+    "..n.....",
+    "..p.....",
+    "....P...",
+    "..N.....",
+    "PPPP.PPP",
+    "R.BQKBNR"
+   ],
+   "result": null,
+   "instructions": 226814,
+   "chip_tokens": 254826,
+   "engine_s": 45.25,
+   "qwen_s": 9.43,
+   "t_wall": 442.93,
+   "time": "2026-10-28T17:36:43Z"
   }
  ],
  "now": {
   "phase": "engine",
   "text": "",
-  "instructions_so_far": 109765,
-  "t_wall": 413.3,
-  "time": "2026-10-28T17:36:13Z"
+  "instructions_so_far": 82090,
+  "t_wall": 463.2,
+  "time": "2026-10-28T17:37:03Z"
  },
  "nudges": 0,
  "result": null,
  "totals": {
-  "instructions": 2169463,
-  "instructions_completed_moves": 2059698,
-  "chip_tokens": 2286137,
-  "engine_moves": 1,
-  "wall_s": 413.3
+  "instructions": 2368602,
+  "instructions_completed_moves": 2286512,
+  "chip_tokens": 2540963,
+  "engine_moves": 2,
+  "wall_s": 463.2
  }
 }
