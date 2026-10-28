@@ -1,7 +1,7 @@
 {
  "title": "Qwen vs the computer inside its own weights",
  "status": "live",
- "updated": "2026-10-28T17:37:05Z",
+ "updated": "2026-10-28T17:37:53Z",
  "white": "Qwen3.5-4B (thinking in English)",
  "black": "mcu-max chess engine (depth 2, \u22641000 nodes) running on the RISC-V CPU compiled into Qwen's own weights",
  "gpu": "NVIDIA A40",
@@ -57,22 +57,47 @@
    "qwen_s": 9.43,
    "t_wall": 442.93,
    "time": "2026-10-28T17:36:43Z"
+  },
+  {
+   "call": 3,
+   "qwen_text": "Black has developed their knight to c6, a standard move in the Sicilian Defense. I have a knight on c3 and a pawn on e4. I need to continue developing my pieces. A common move is to play d4, challenging Black's center and opening the diagonal for my light-squared bishop.",
+   "qwen_move": "d4",
+   "legal": true,
+   "you": "d4",
+   "engine_move": "Nxd4",
+   "board": [
+    "r.bqkbnr",
+    "pp.ppppp",
+    "........",
+    "..p.....",
+    "...nP...",
+    "..N.....",
+    "PPP..PPP",
+    "R.BQKBNR"
+   ],
+   "result": null,
+   "instructions": 233515,
+   "chip_tokens": 263133,
+   "engine_s": 47.35,
+   "qwen_s": 9.69,
+   "t_wall": 500.26,
+   "time": "2026-10-28T17:37:40Z"
   }
  ],
  "now": {
-  "phase": "engine",
+  "phase": "engine_reply",
   "text": "",
-  "instructions_so_far": 82090,
-  "t_wall": 463.2,
-  "time": "2026-10-28T17:37:03Z"
+  "instructions_so_far": 0,
+  "t_wall": 510.4,
+  "time": "2026-10-28T17:37:51Z"
  },
  "nudges": 0,
  "result": null,
  "totals": {
-  "instructions": 2368602,
-  "instructions_completed_moves": 2286512,
-  "chip_tokens": 2540963,
-  "engine_moves": 2,
-  "wall_s": 463.2
+  "instructions": 2520027,
+  "instructions_completed_moves": 2520027,
+  "chip_tokens": 2804096,
+  "engine_moves": 3,
+  "wall_s": 510.4
  }
 }
