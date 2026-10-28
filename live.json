@@ -1,7 +1,7 @@
 {
  "title": "Qwen vs the computer inside its own weights",
  "status": "live",
- "updated": "2026-10-28T18:54:24Z",
+ "updated": "2026-10-28T18:55:13Z",
  "white": "Qwen3.5-4B (thinking in English)",
  "black": "mcu-max chess engine (depth 2, \u22641000 nodes) running on the RISC-V CPU compiled into Qwen's own weights",
  "gpu": "NVIDIA A40",
@@ -526,22 +526,47 @@
    "qwen_s": 8.59,
    "t_wall": 4926.62,
    "time": "2026-10-28T18:51:27Z"
+  },
+  {
+   "call": 25,
+   "qwen_text": "I cannot play g4 because the pawn on g3 is not able to move? Or maybe the move is not legal for some other reason. Let me look at the legal moves. I see a4, Nd2, Nd4, etc. Maybe I should play a4 to support the b3 pawn.\n\nActually, looking at the board, I have a pawn on a3. The pawn on a3 can move to a4. Let me try a4.",
+   "qwen_move": "a4",
+   "legal": true,
+   "you": "a4",
+   "engine_move": "Rxf3",
+   "board": [
+    "r.bqkb..",
+    "pp..ppp.",
+    "...pn...",
+    "..p.....",
+    "P.......",
+    "..B..r..",
+    "R.P..P..",
+    ".....RK."
+   ],
+   "result": null,
+   "instructions": 1084142,
+   "chip_tokens": 1198116,
+   "engine_s": 198.87,
+   "qwen_s": 15.33,
+   "t_wall": 5142.67,
+   "time": "2026-10-28T18:55:03Z"
   }
  ],
  "now": {
   "phase": "engine",
   "text": "",
-  "instructions_so_far": 915127,
-  "t_wall": 5102.6,
-  "time": "2026-10-28T18:54:23Z"
+  "instructions_so_far": 0,
+  "t_wall": 5148.2,
+  "time": "2026-10-28T18:55:08Z"
  },
  "nudges": 0,
  "result": null,
  "totals": {
-  "instructions": 25576273,
-  "instructions_completed_moves": 24661146,
-  "chip_tokens": 27329972,
-  "engine_moves": 15,
-  "wall_s": 5102.6
+  "instructions": 25745288,
+  "instructions_completed_moves": 25745288,
+  "chip_tokens": 28528088,
+  "engine_moves": 16,
+  "wall_s": 5148.2
  }
 }
