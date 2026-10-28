@@ -1,7 +1,7 @@
 {
  "title": "Qwen vs the computer inside its own weights",
  "status": "live",
- "updated": "2026-10-28T18:10:14Z",
+ "updated": "2026-10-28T18:11:25Z",
  "white": "Qwen3.5-4B (thinking in English)",
  "black": "mcu-max chess engine (depth 2, \u22641000 nodes) running on the RISC-V CPU compiled into Qwen's own weights",
  "gpu": "NVIDIA A40",
@@ -271,22 +271,63 @@
    "qwen_s": 8.37,
    "t_wall": 1945.91,
    "time": "2026-10-28T18:01:46Z"
+  },
+  {
+   "call": 13,
+   "qwen_text": "I cannot play fxe5 because the pawn on f2 is pinned? Or maybe the move is not legal for some other reason. Let me look at the legal moves. I see g4, h3, h4, etc. Maybe I should play g4 to challenge Black's knight on e5.\n\nActually, looking at the board, I have a pawn on g3 and a knight on f3. The knight on e5 is attacking the pawn on g3? No, the knight on e5 is on e5. The pawn on g3 is on g3. The knight on e5 is not attacking the pawn on g3.\n\nWait, maybe I should play g4 to challenge the knight on e5. Let me try g4.",
+   "qwen_move": "g4",
+   "legal": true,
+   "you": "g4",
+   "engine_move": "Nxc4",
+   "board": [
+    "r.bqkb.r",
+    "pp..pppp",
+    "...pn...",
+    "..p.....",
+    "..n...P.",
+    "..N..N..",
+    "PPP..P.P",
+    "R.BQ.RK."
+   ],
+   "result": null,
+   "instructions": 2954496,
+   "chip_tokens": 3273667,
+   "engine_s": 539.72,
+   "qwen_s": 14.91,
+   "t_wall": 2501.86,
+   "time": "2026-10-28T18:11:04Z"
+  },
+  {
+   "call": 14,
+   "qwen_text": "Black has captured my bishop on c4 with their knight (Nxc4). I have a knight on f3 and a pawn on g4. I need to recapture the bishop to maintain material balance. A common move is to play Bxc4, but I don't have a bishop on b5 or d3. Let me check the board.\n\nLooking at the board, I have a bishop on b1 (the light-squared bishop). I can play Bxc4 to recapture the bishop.",
+   "qwen_move": "Bxc4",
+   "legal": false,
+   "you": null,
+   "engine_move": null,
+   "board": null,
+   "result": null,
+   "instructions": 22529,
+   "chip_tokens": 26062,
+   "engine_s": 7.44,
+   "qwen_s": 8.72,
+   "t_wall": 2520.65,
+   "time": "2026-10-28T18:11:21Z"
   }
  ],
  "now": {
-  "phase": "engine",
+  "phase": "qwen",
   "text": "",
-  "instructions_so_far": 2715891,
-  "t_wall": 2448.7,
-  "time": "2026-10-28T18:10:09Z"
+  "instructions_so_far": 0,
+  "t_wall": 2520.7,
+  "time": "2026-10-28T18:11:21Z"
  },
  "nudges": 0,
  "result": null,
  "totals": {
-  "instructions": 12325138,
-  "instructions_completed_moves": 9609247,
-  "chip_tokens": 10672002,
-  "engine_moves": 8,
-  "wall_s": 2448.7
+  "instructions": 12586272,
+  "instructions_completed_moves": 12586272,
+  "chip_tokens": 13971731,
+  "engine_moves": 9,
+  "wall_s": 2520.7
  }
 }
