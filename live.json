@@ -1,7 +1,7 @@
 {
  "title": "Qwen vs the computer inside its own weights",
  "status": "live",
- "updated": "2026-10-28T18:01:04Z",
+ "updated": "2026-10-28T18:01:53Z",
  "white": "Qwen3.5-4B (thinking in English)",
  "black": "mcu-max chess engine (depth 2, \u22641000 nodes) running on the RISC-V CPU compiled into Qwen's own weights",
  "gpu": "NVIDIA A40",
@@ -230,22 +230,63 @@
    "qwen_s": 8.35,
    "t_wall": 1591.87,
    "time": "2026-10-28T17:55:52Z"
+  },
+  {
+   "call": 11,
+   "qwen_text": "I cannot play f3 because the pawn on f2 is pinned? Or maybe the move is not legal for some other reason. Let me look at the legal moves. I see g3, h3, h4, etc. Maybe I should play g3 to support the e4 pawn and prepare to develop the knight.\n\nActually, looking at the board, I have a pawn on e5 and a knight on g4 attacking it. I need to defend the pawn. A common move is to play f3, but it's illegal. Maybe I should play g3 to support the e4 pawn and prepare to develop the knight.\n\nLet me try g3.",
+   "qwen_move": "g3",
+   "legal": true,
+   "you": "g3",
+   "engine_move": "Nxe5",
+   "board": [
+    "r.bqkb.r",
+    "pp..pppp",
+    "...pn...",
+    "..p.n...",
+    "..B.....",
+    "..N..NP.",
+    "PPP..P.P",
+    "R.BQ.RK."
+   ],
+   "result": null,
+   "instructions": 1727872,
+   "chip_tokens": 1915057,
+   "engine_s": 318.34,
+   "qwen_s": 15.22,
+   "t_wall": 1926.4,
+   "time": "2026-10-28T18:01:27Z"
+  },
+  {
+   "call": 12,
+   "qwen_text": "Black has captured my pawn on e5 with their knight (Nxe5). I have a knight on f3 and a pawn on g3. I need to recapture the pawn to maintain material balance. A common move is to play fxe5, recapturing with the f-pawn.",
+   "qwen_move": "fxe5",
+   "legal": false,
+   "you": null,
+   "engine_move": null,
+   "board": null,
+   "result": null,
+   "instructions": 29004,
+   "chip_tokens": 33405,
+   "engine_s": 9.68,
+   "qwen_s": 8.37,
+   "t_wall": 1945.91,
+   "time": "2026-10-28T18:01:46Z"
   }
  ],
  "now": {
-  "phase": "engine",
-  "text": "",
-  "instructions_so_far": 1640230,
-  "t_wall": 1898.5,
-  "time": "2026-10-28T18:00:59Z"
+  "phase": "qwen",
+  "text": "I cannot play fxe5 because the pawn on f2 is pinned? Or maybe the move is not legal for some other reason. Let me look at the legal moves. I see g4, h3, h4, etc. Maybe I should play g4 to challenge Black's knight on e5.\n\nActually, looking at the board, I have a pawn on g3 and a knight on f3. The knight on e5 is attacking the pawn on g3? No, the knight on e5 is on e5. The pawn on g3 is on g3. The knight on e5 is not attacking the pawn on g3.\n\nWait, maybe I should play g4 to challenge the knight on e5. Let me try",
+  "instructions_so_far": 0,
+  "t_wall": 1951.0,
+  "time": "2026-10-28T18:01:51Z"
  },
  "nudges": 0,
  "result": null,
  "totals": {
-  "instructions": 9492601,
-  "instructions_completed_moves": 7852371,
-  "chip_tokens": 8723540,
-  "engine_moves": 7,
-  "wall_s": 1898.5
+  "instructions": 9609247,
+  "instructions_completed_moves": 9609247,
+  "chip_tokens": 10672002,
+  "engine_moves": 8,
+  "wall_s": 1951.0
  }
 }
