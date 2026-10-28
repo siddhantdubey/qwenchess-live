@@ -1,7 +1,7 @@
 {
  "title": "Qwen vs the computer inside its own weights",
  "status": "live",
- "updated": "2026-10-28T18:21:00Z",
+ "updated": "2026-10-28T18:21:48Z",
  "white": "Qwen3.5-4B (thinking in English)",
  "black": "mcu-max chess engine (depth 2, \u22641000 nodes) running on the RISC-V CPU compiled into Qwen's own weights",
  "gpu": "NVIDIA A40",
@@ -312,22 +312,63 @@
    "qwen_s": 8.72,
    "t_wall": 2520.65,
    "time": "2026-10-28T18:11:21Z"
+  },
+  {
+   "call": 15,
+   "qwen_text": "I cannot play Bxc4 because the bishop on b1 is not able to move to c4? Or maybe the move is not legal for some other reason. Let me look at the legal moves. I see Bd2, Be3, Bf4, Bg5, Bh6, etc. Maybe I should play Bd2 to develop the bishop.\n\nActually, looking at the board, I have a bishop on b1. The knight on c4 is on c4. To recapture the knight on c4, I need to move the bishop from b1 to c4. But the system says it's illegal. Maybe the bishop on b1 is pinned? Or maybe the knight on c4 is protected?\n\nLet me think about the position. Black has a knight on c4. I have a bishop on b1. The bishop on b1 can move to c4 if the path is clear. But the system says it's illegal. Maybe the bishop on b1 is pinned by something?\n\nActually, looking at the board, I have a queen on d1, a rook on h1, a king on g1, a bishop on b1, a knight on f3, a pawn on g4, a pawn on f2, a pawn on e2, a pawn on d2, a pawn on c2, a pawn on b2, a pawn on a2, a rook on a1.\n\nWait, I don't have a pawn on f2. Let me check the board again.\n\nAfter my move g4, the board was:\n8 r . b q k b . r\n7 p p . . p p p p\n6 . . . p n . . .\n5 . . p . . . . .\n4 . . n . . . P .\n3 . . N . . N . .\n2 P P P . . P . P\n1 R . B Q . R K .\n\nI have a pawn on f2? No, I don't see a pawn on f2. Let me check the legal moves again.\n\nActually, looking at the board, I have a pawn on f2? No, the pawn on f2 was captured? No, I didn't capture anything on f2.\n\nWait, maybe the issue is that the bishop on b1 is not able to move to c4 because of some reason. Let me try a different move. Maybe I should play Bd2 to develop the bishop.",
+   "qwen_move": "Bd2",
+   "legal": true,
+   "you": "Bd2",
+   "engine_move": "Nxb2",
+   "board": [
+    "r.bqkb.r",
+    "pp..pppp",
+    "...pn...",
+    "..p.....",
+    "......P.",
+    "..N..N..",
+    "PnPB.P.P",
+    "R..Q.RK."
+   ],
+   "result": null,
+   "instructions": 3173315,
+   "chip_tokens": 3514711,
+   "engine_s": 578.5,
+   "qwen_s": 24.88,
+   "t_wall": 3125.56,
+   "time": "2026-10-28T18:21:27Z"
+  },
+  {
+   "call": 16,
+   "qwen_text": "Black has captured my pawn on b2 with their knight (Nxb2). This is a common tactic in the Sicilian Defense. I have a bishop on d2 and a knight on f3. I need to recapture the pawn to maintain material balance. A common move is to play axb2, recapturing with the a-pawn.",
+   "qwen_move": "axb2",
+   "legal": false,
+   "you": null,
+   "engine_move": null,
+   "board": null,
+   "result": null,
+   "instructions": 19940,
+   "chip_tokens": 23099,
+   "engine_s": 6.35,
+   "qwen_s": 7.37,
+   "t_wall": 3141.83,
+   "time": "2026-10-28T18:21:42Z"
   }
  ],
  "now": {
-  "phase": "engine",
-  "text": "",
-  "instructions_so_far": 3071985,
-  "t_wall": 3098.6,
-  "time": "2026-10-28T18:20:59Z"
+  "phase": "qwen",
+  "text": "I cannot play axb2 because the pawn on a2 is pinned? Or maybe the move is not legal for some other reason. Let me look at the legal moves. I see a3, a4, etc. Maybe I should play a3 to support the b2 pawn.\n\nActually, looking at the board, I have a pawn on a2. The knight on b2 is on b2. To recapture the knight on b2, I need to move the pawn from a2 to b2. But the system says it's illegal. Maybe the pawn on a2 is pinned?\n\nLet me think about the position. Black has a knight on b2",
+  "instructions_so_far": 0,
+  "t_wall": 3146.8,
+  "time": "2026-10-28T18:21:47Z"
  },
  "nudges": 0,
  "result": null,
  "totals": {
-  "instructions": 15658257,
-  "instructions_completed_moves": 12586272,
-  "chip_tokens": 13971731,
-  "engine_moves": 9,
-  "wall_s": 3098.6
+  "instructions": 15779527,
+  "instructions_completed_moves": 15779527,
+  "chip_tokens": 17509541,
+  "engine_moves": 10,
+  "wall_s": 3146.8
  }
 }
