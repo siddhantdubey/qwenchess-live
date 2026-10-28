@@ -1,7 +1,7 @@
 {
  "title": "Qwen vs the computer inside its own weights",
  "status": "live",
- "updated": "2026-10-28T17:37:53Z",
+ "updated": "2026-10-28T17:38:42Z",
  "white": "Qwen3.5-4B (thinking in English)",
  "black": "mcu-max chess engine (depth 2, \u22641000 nodes) running on the RISC-V CPU compiled into Qwen's own weights",
  "gpu": "NVIDIA A40",
@@ -82,22 +82,54 @@
    "qwen_s": 9.69,
    "t_wall": 500.26,
    "time": "2026-10-28T17:37:40Z"
+  },
+  {
+   "call": 4,
+   "qwen_text": "Black has captured my pawn on d4 with their knight (Nxd4). This is a common tactic in the Sicilian Defense. I have a knight on c3 and a pawn on e4. I need to recapture the pawn to maintain material balance and continue developing. A common move is to play exd5, recapturing with the e-pawn.",
+   "qwen_move": "exd5",
+   "legal": false,
+   "you": null,
+   "engine_move": null,
+   "board": null,
+   "result": null,
+   "instructions": 23372,
+   "chip_tokens": 27179,
+   "engine_s": 7.92,
+   "qwen_s": 6.39,
+   "t_wall": 514.86,
+   "time": "2026-10-28T17:37:55Z"
+  },
+  {
+   "call": 5,
+   "qwen_text": "I cannot play exd5 because the pawn on e4 is pinned or blocked? Wait, looking at the board, I have a pawn on e4 and Black has a knight on d4. The move exd5 would be capturing the knight on d5? No, the knight is on d4. Let me re-read the board.\n\nBoard after Black's move:\n8 r . b q k b n r\n7 p p . p p p p p\n6 . . . . . . . .\n5 . . p . . . . .\n4 . . . n P . . .\n3 . . N . . . . .\n2 P P P . . P P P\n1 R . B Q K B N R\n\nBlack's knight is on d4. My pawn is on e4. To capture the knight on d4, I should play exd4, not exd5. exd5 would be capturing a pawn on d5, but there is no pawn on d5. The knight is on d4.\n\nLet me correct my move to exd4.",
+   "qwen_move": "exd4",
+   "legal": false,
+   "you": null,
+   "engine_move": null,
+   "board": null,
+   "result": null,
+   "instructions": 23372,
+   "chip_tokens": 27179,
+   "engine_s": 7.9,
+   "qwen_s": 10.62,
+   "t_wall": 533.57,
+   "time": "2026-10-28T17:38:14Z"
   }
  ],
  "now": {
-  "phase": "engine_reply",
+  "phase": "engine",
   "text": "",
-  "instructions_so_far": 0,
-  "t_wall": 510.4,
-  "time": "2026-10-28T17:37:51Z"
+  "instructions_so_far": 34118,
+  "t_wall": 558.7,
+  "time": "2026-10-28T17:38:39Z"
  },
  "nudges": 0,
  "result": null,
  "totals": {
-  "instructions": 2520027,
-  "instructions_completed_moves": 2520027,
-  "chip_tokens": 2804096,
+  "instructions": 2600889,
+  "instructions_completed_moves": 2566771,
+  "chip_tokens": 2858454,
   "engine_moves": 3,
-  "wall_s": 510.4
+  "wall_s": 558.7
  }
 }
