@@ -1,7 +1,7 @@
 {
  "title": "Qwen vs the computer inside its own weights",
  "status": "live",
- "updated": "2026-10-28T17:48:40Z",
+ "updated": "2026-10-28T17:49:28Z",
  "white": "Qwen3.5-4B (thinking in English)",
  "black": "mcu-max chess engine (depth 2, \u22641000 nodes) running on the RISC-V CPU compiled into Qwen's own weights",
  "gpu": "NVIDIA A40",
@@ -164,22 +164,47 @@
    "qwen_s": 11.17,
    "t_wall": 940.55,
    "time": "2026-10-28T17:45:01Z"
+  },
+  {
+   "call": 8,
+   "qwen_text": "Black has played d6, a common move in the Sicilian Defense to support the e5 square and prepare for further development. I have a bishop on c4 and a pawn on e4. I need to continue developing my pieces. A common move is to play O-O (castling kingside), which is a standard move to secure the king and connect the rooks.",
+   "qwen_move": "O-O",
+   "legal": true,
+   "you": "O-O",
+   "engine_move": "Nf6",
+   "board": [
+    "r.bqkb.r",
+    "pp..pppp",
+    "...pnn..",
+    "..p.....",
+    "..B.P...",
+    "..N..N..",
+    "PPP..PPP",
+    "R.BQ.RK."
+   ],
+   "result": null,
+   "instructions": 1209185,
+   "chip_tokens": 1341378,
+   "engine_s": 224.47,
+   "qwen_s": 12.88,
+   "t_wall": 1178.89,
+   "time": "2026-10-28T17:49:00Z"
   }
  ],
  "now": {
   "phase": "engine",
   "text": "",
-  "instructions_so_far": 1158673,
-  "t_wall": 1157.3,
-  "time": "2026-10-28T17:48:37Z"
+  "instructions_so_far": 105153,
+  "t_wall": 1204.7,
+  "time": "2026-10-28T17:49:25Z"
  },
  "nudges": 0,
  "result": null,
  "totals": {
-  "instructions": 5706768,
-  "instructions_completed_moves": 4548095,
-  "chip_tokens": 5059255,
-  "engine_moves": 5,
-  "wall_s": 1157.3
+  "instructions": 5862433,
+  "instructions_completed_moves": 5757280,
+  "chip_tokens": 6400633,
+  "engine_moves": 6,
+  "wall_s": 1204.7
  }
 }
