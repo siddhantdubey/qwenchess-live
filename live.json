@@ -1,7 +1,7 @@
 {
  "title": "Qwen vs the computer inside its own weights",
  "status": "live",
- "updated": "2026-10-28T21:27:57Z",
+ "updated": "2026-10-28T21:28:45Z",
  "white": "Qwen3.5-4B (thinking in English)",
  "black": "mcu-max chess engine (depth 2, \u22641000 nodes) running on the RISC-V CPU compiled into Qwen's own weights",
  "gpu": "NVIDIA A40",
@@ -867,22 +867,47 @@
    "qwen_s": 12.23,
    "t_wall": 151.38,
    "time": "2026-10-28T21:26:03Z"
+  },
+  {
+   "call": 39,
+   "qwen_text": "Black has captured my pawn on a4 with their bishop (Bxa4). This is a significant loss of material. I have a king on b1 and a pawn on a5. I need to continue developing my pieces. A common move is to play Ka1, moving the king to a safer square.",
+   "qwen_move": "Ka1",
+   "legal": true,
+   "you": "Ka1",
+   "engine_move": "Bg7+",
+   "board": [
+    "r..qk...",
+    "pp..ppb.",
+    "...p....",
+    "..p.....",
+    "b.......",
+    ".......n",
+    ".....r..",
+    "K......."
+   ],
+   "result": null,
+   "instructions": 710754,
+   "chip_tokens": 785135,
+   "engine_s": 129.7,
+   "qwen_s": 15.85,
+   "t_wall": 299.8,
+   "time": "2026-10-28T21:28:32Z"
   }
  ],
  "now": {
   "phase": "engine",
   "text": "",
-  "instructions_so_far": 540583,
-  "t_wall": 262.4,
-  "time": "2026-10-28T21:27:54Z"
+  "instructions_so_far": 16590,
+  "t_wall": 310.2,
+  "time": "2026-10-28T21:28:42Z"
  },
  "nudges": 0,
  "result": null,
  "totals": {
-  "instructions": 34283648,
-  "instructions_completed_moves": 33743065,
-  "chip_tokens": 37392973,
-  "engine_moves": 28,
-  "wall_s": 262.4
+  "instructions": 34470409,
+  "instructions_completed_moves": 34453819,
+  "chip_tokens": 38178108,
+  "engine_moves": 29,
+  "wall_s": 310.2
  }
 }
